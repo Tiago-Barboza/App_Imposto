@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Title</title>
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+</head>
+<body>
+    {% include 'shared/header.html' %}
+    {% block content %}
+    <main style="height: 100%;">
+        <h1 class="text-center mt-5">15 Maiores Impostos</h1>
+        <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="table-responsive bg-white mb-5 mt-5" style="border-radius: 1em;">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Posição</th>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Tributação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for prod in sortedList %}
+                                    <tr>
+                                        <th scope="row" style="color: #666666;">{{ forloop.counter}}</th>
+                                        <td>{{prod.nome}}</td>
+                                        <td style=" font-weight: 500; color: #999999;">{{prod.tributacao}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+</body>
+</html>
+
+

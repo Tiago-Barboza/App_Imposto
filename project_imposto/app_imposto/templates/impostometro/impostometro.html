@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    <style>
+        #imgBanner{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    {% include 'shared/header.html' %}
+    {% block content %}
+    <main>
+        <h1 class="text-center">Descubra o valor arrecadado</h1>
+        <div id="divEstados" class="text-center">
+            <form class=" d-flex flex-column align-items-center" style="width: 100%" id="formEstado" method="post" action="{% url 'impostometro' %}">
+                {% csrf_token %}
+                <select style="width: 70%; margin-bottom: 2%" class="form-control" name="selectEstado" onchange="this.form.submit();">
+                    <option value="">Escolha um estado</option>
+                    {% if select_value == "BR" %}
+                        <option value="BR" selected>Brasil</option>
+                    {% else %}
+                        <option value="BR">Brasil</option>
+                    {% endif %}
+                    {% if select_value == "AC" %}
+                        <option value="AC" selected>Acre</option>
+                    {% else %}
+                        <option value="AC">Acre</option>
+                    {% endif %}
+                    {% if select_value == "AL" %}
+                        <option value="AL" selected>Alagoas</option>
+                    {% else %}
+                        <option value="AL">Alagoas</option>
+                    {% endif %}
+                    {% if select_value == "AP" %}
+                        <option value="AP" selected>Amapá</option>
+                    {% else %}
+                        <option value="AP">Amapá</option>
+                    {% endif %}
+                    {% if select_value == "AM" %}
+                        <option value="AM" selected>Amazonas</option>
+                    {% else %}
+                        <option value="AM">Amazonas</option>
+                    {% endif %}
+                    {% if select_value == "BA" %}
+                        <option value="BA" selected>Bahia</option>
+                    {% else %}
+                        <option value="BA">Bahia</option>
+                    {% endif %}
+                    {% if select_value == "CE" %}
+                        <option value="CE" selected>Ceará</option>
+                    {% else %}
+                        <option value="CE">Ceará</option>
+                    {% endif %}
+                    {% if select_value == "DF" %}
+                        <option value="DF" selected>Distrito Federal</option>
+                    {% else %}
+                        <option value="DF">Distrito Federal</option>
+                    {% endif %}
+                    {% if select_value == "ES" %}
+                        <option value="ES" selected>Espírito Santo</option>
+                    {% else %}
+                        <option value="ES">Espírito Santo</option>
+                    {% endif %}
+                    {% if select_value == "GO" %}
+                        <option value="GO" selected>Goiás</option>
+                    {% else %}
+                        <option value="GO">Goiás</option>
+                    {% endif %}
+                    {% if select_value == "MA" %}
+                        <option value="MA" selected>Maranhão</option>
+                    {% else %}
+                        <option value="MA">Maranhão</option>
+                    {% endif %}
+                    {% if select_value == "MT" %}
+                        <option value="MT" selected>Mato Grosso</option>
+                    {% else %}
+                        <option value="MT">Mato Grosso</option>
+                    {% endif %}
+                    {% if select_value == "MS" %}
+                        <option value="MS" selected>Mato Grosso do Sul</option>
+                    {% else %}
+                        <option value="MS">Mato Grosso do Sul</option>
+                    {% endif %}
+                    {% if select_value == "MG" %}
+                        <option value="MG" selected>Minas Gerais</option>
+                    {% else %}
+                        <option value="MG">Minas Gerais</option>
+                    {% endif %}
+                    {% if select_value == "PA" %}
+                        <option value="PA" selected>Pará </option>
+                    {% else %}
+                        <option value="PA">Pará </option>
+                    {% endif %}
+                    {% if select_value == "PB" %}
+                        <option value="PB" selected>Paraíba</option>
+                    {% else %}
+                        <option value="PB">Paraíba</option>
+                    {% endif %}
+                    {% if select_value == "PR" %}
+                        <option value="PR" selected>Paraná</option>
+                    {% else %}
+                        <option value="PR">Paraná</option>
+                    {% endif %}
+                    {% if select_value == "PE" %}
+                        <option value="PE" selected>Pernambuco</option>
+                    {% else %}
+                        <option value="PE">Pernambuco</option>
+                    {% endif %}
+                    {% if select_value == "PI" %}
+                        <option value="PI" selected>Piauí</option>
+                    {% else %}
+                        <option value="PI">Piauí</option>
+                    {% endif %}
+                    {% if select_value == "RJ" %}
+                        <option value="RJ" selected>Rio de Janeiro</option>
+                    {% else %}
+                        <option value="RJ">Rio de Janeiro</option>
+                    {% endif %}
+                    {% if select_value == "RN" %}
+                        <option value="RN" selected>Rio Grande do Norte</option>
+                    {% else %}
+                        <option value="RN">Rio Grande do Norte</option>
+                    {% endif %}
+                    {% if select_value == "RS" %}
+                        <option value="RS" selected>Rio Grande do Sul</option>
+                    {% else %}
+                        <option value="RS">Rio Grande do Sul</option>
+                    {% endif %}
+                    {% if select_value == "RO" %}
+                        <option value="RO" selected>Rondônia</option>
+                    {% else %}
+                        <option value="RO">Rondônia</option>
+                    {% endif %}
+                    {% if select_value == "RR" %}
+                        <option value="RR" selected>Roraima</option>
+                    {% else %}
+                        <option value="RR">Roraima</option>
+                    {% endif %}
+                    {% if select_value == "SC" %}
+                        <option value="SC" selected>Santa Catarina</option>
+                    {% else %}
+                        <option value="SC">Santa Catarina</option>
+                    {% endif %}
+                    {% if select_value == "SP" %}
+                        <option value="SP" selected>São Paulo</option>
+                    {% else %}
+                        <option value="SP">São Paulo</option>
+                    {% endif %}
+                    {% if select_value == "SE" %}
+                        <option value="SE" selected>Sergipe</option>
+                    {% else %}
+                        <option value="SE">Sergipe</option>
+                    {% endif %}
+                    {% if select_value == "TO" %}
+                        <option value="TO" selected>Tocantins</option>
+                    {% else %}
+                        <option value="TO">Tocantins</option>
+                    {% endif %}
+                </select>
+                {% csrf_token %}
+                {{selectMunicipios}}
+                {% csrf_token %}
+                <button class="btn btn-info mt-2" id="btnDale" name="btnPesquisar" type="submit" onclick="OcultaImagem">Pesquisar</button>
+            </form>
+        </div>
+        <div class="text-center img-fluid" id="frameArrecadado">
+            {{frameArrecadado}}
+        </div>
+    </main>
+    {% endblock %}
+</body>
+</html>
+
+
