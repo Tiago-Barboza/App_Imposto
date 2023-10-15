@@ -130,7 +130,7 @@ STATICFILES_DIR = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ["192.168.1.13"]
+ALLOWED_HOSTS = ["*"]
 
 
 #Variáveis Globais
