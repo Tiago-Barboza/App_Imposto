@@ -12,7 +12,7 @@
     {% bootstrap_javascript %}
     {% bootstrap_messages %}
 </head>
-<body>
+<body style="background-image: radial-gradient(circle 835px at 12.1% 24%, rgba(93, 133, 178, 1) 25.7%, rgba(50, 73, 101, 1) 100.2%);background-repeat: no-repeat;background-attachment: fixed;">
     {% include 'shared/header.html' %}
     {% block content %}
     <main style="height: 100%;">
@@ -21,16 +21,16 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="table-responsive bg-white mb-5 mt-5" style="border-radius: 1em;">
+                        <div class="table-responsive mb-5 mt-5">
                             <table class="table mb-0">
-                                <thead>
-                                    <tr>
+                                <thead style="width: 100%;">
+                                    <tr style="background-image: radial-gradient(circle 835px at 12.1% 24%, rgba(93, 133, 178, 1) 25.7%, rgba(50, 73, 101, 1) 100.2%);">
                                         <th scope="col">Posição</th>
                                         <th scope="col">Produto</th>
                                         <th scope="col">Tributação</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody style="background-color: white;">
                                     {% for prod in sortedList %}
                                     <tr>
                                         <th scope="row" style="color: #666666;">{{ forloop.counter}}</th>

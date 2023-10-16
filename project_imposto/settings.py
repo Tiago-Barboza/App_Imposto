@@ -130,12 +130,12 @@ STATICFILES_DIR = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = [".vercel.app","*"]
 
 
 #Variáveis Globais
 prodList = []
-
+token = "Dale"
 impostometroFrame = '<iframe class="img-fluid" id="impostometro" src="https://impostometro.com.br/widget/contador/" width="728" height="auto" scrolling="no" frameborder="0"></iframe>'
 MunicipioFrame = '<iframe class="img-fluid" id="impostometro" src="https://impostometro.com.br/widget/contador/?municipio=" width="728" height="auto" scrolling="no" frameborder="0"></iframe>'
 impostometroMunicipiosEstados = [
