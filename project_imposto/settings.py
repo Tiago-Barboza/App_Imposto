@@ -120,17 +120,23 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, "static")
 ]
+
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+#     "/app_imposto/static/",
+# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [".vercel.app","*"]
+# ALLOWED_HOSTS = [".vercel.app","*"]
+ALLOWED_HOSTS = ["192.168.1.13","*","127.0.0.1",".vercel.app"]
 
 
 #Variáveis Globais
@@ -143,7 +149,7 @@ impostometroMunicipiosEstados = [
         "Estado":"AC",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acrelandia">ACRELANDIA</option>
                 <option value="assis-brasil">ASSIS BRASIL</option>
@@ -173,7 +179,7 @@ impostometroMunicipiosEstados = [
         "Estado":"AL",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="agua-branca">AGUA BRANCA</option>
                 <option value="anadia">ANADIA</option>
@@ -284,7 +290,7 @@ impostometroMunicipiosEstados = [
         "Estado":"AP",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="serra-do-navio">SERRA DO NAVIO</option>
                 <option value="amapa">AMAPA</option>
@@ -309,7 +315,7 @@ impostometroMunicipiosEstados = [
         "Estado":"AM",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="alvaraes">ALVARAES</option>
                 <option value="amatura">AMATURA</option>
@@ -380,7 +386,7 @@ impostometroMunicipiosEstados = [
         "Estado":"BA",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abaira">ABAIRA</option>
                 <option value="abare">ABARE</option>
@@ -805,7 +811,7 @@ impostometroMunicipiosEstados = [
         "Estado":"CE",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abaiara">ABAIARA</option>
                 <option value="acarape">ACARAPE</option>
@@ -998,7 +1004,7 @@ impostometroMunicipiosEstados = [
         "Estado":"DF",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="brasilia">BRASILIA</option>
             </select>
@@ -1008,7 +1014,7 @@ impostometroMunicipiosEstados = [
         "Estado":"ES",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="afonso-claudio">AFONSO CLAUDIO</option>
                 <option value="aguia-branca">AGUIA BRANCA</option>
@@ -1095,7 +1101,7 @@ impostometroMunicipiosEstados = [
         "Estado":"GO",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abadia-de-goias">ABADIA DE GOIAS</option>
                 <option value="abadiania">ABADIANIA</option>
@@ -1350,7 +1356,7 @@ impostometroMunicipiosEstados = [
         "Estado":"MA",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acailandia">ACAILANDIA</option>
                 <option value="afonso-cunha">AFONSO CUNHA</option>
@@ -1576,7 +1582,7 @@ impostometroMunicipiosEstados = [
         "Estado":"MT",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acorizal">ACORIZAL</option>
                 <option value="agua-boa">AGUA BOA</option>
@@ -1726,7 +1732,7 @@ impostometroMunicipiosEstados = [
         "Estado":"MS",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="agua-clara">AGUA CLARA</option>
                 <option value="alcinopolis">ALCINOPOLIS</option>
@@ -1814,7 +1820,7 @@ impostometroMunicipiosEstados = [
         "Estado":"MG",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abadia-dos-dourados">ABADIA DOS DOURADOS</option>
                 <option value="abaete">ABAETE</option>
@@ -2676,7 +2682,7 @@ impostometroMunicipiosEstados = [
         "Estado":"PA",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abaetetuba">ABAETETUBA</option>
                 <option value="abel-figueiredo">ABEL FIGUEIREDO</option>
@@ -2829,7 +2835,7 @@ impostometroMunicipiosEstados = [
         "Estado":"PB",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="agua-branca">AGUA BRANCA</option>
                 <option value="aguiar">AGUIAR</option>
@@ -3061,7 +3067,7 @@ impostometroMunicipiosEstados = [
         "Estado":"PR",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abatia">ABATIA</option>
                 <option value="adrianopolis">ADRIANOPOLIS</option>
@@ -3469,7 +3475,7 @@ impostometroMunicipiosEstados = [
         "Estado":"PE",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abreu-e-lima">ABREU E LIMA</option>
                 <option value="afogados-da-ingazeira">AFOGADOS DA INGAZEIRA</option>
@@ -3662,7 +3668,7 @@ impostometroMunicipiosEstados = [
         "Estado":"PI",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acaua">ACAUA</option>
                 <option value="agricolandia">AGRICOLANDIA</option>
@@ -3895,7 +3901,7 @@ impostometroMunicipiosEstados = [
         "Estado":"RJ",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="angra-dos-reis">ANGRA DOS REIS</option>
                 <option value="aperibe">APERIBE</option>
@@ -3996,7 +4002,7 @@ impostometroMunicipiosEstados = [
         "Estado":"RN",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acari">ACARI</option>
                 <option value="acu">ACU</option>
@@ -4172,7 +4178,7 @@ impostometroMunicipiosEstados = [
         "Estado":"RS",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="acegua">ACEGUA</option>
                 <option value="agua-santa">AGUA SANTA</option>
@@ -4678,7 +4684,7 @@ impostometroMunicipiosEstados = [
         "Estado":"RO",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="alta-floresta-doeste">ALTA FLORESTA DOESTE</option>
                 <option value="ariquemes">ARIQUEMES</option>
@@ -4739,7 +4745,7 @@ impostometroMunicipiosEstados = [
         "Estado":"RR",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="amajari">AMAJARI</option>
                 <option value="alto-alegre">ALTO ALEGRE</option>
@@ -4763,7 +4769,7 @@ impostometroMunicipiosEstados = [
         "Estado":"SC",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abdon-batista">ABDON BATISTA</option>
                 <option value="abelardo-luz">ABELARDO LUZ</option>
@@ -5067,7 +5073,7 @@ impostometroMunicipiosEstados = [
         "Estado":"SP",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="adamantina">ADAMANTINA</option>
                 <option value="adolfo">ADOLFO</option>
@@ -5721,7 +5727,7 @@ impostometroMunicipiosEstados = [
         "Estado":"SE",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="amparo-de-sao-francisco">AMPARO DE SAO FRANCISCO</option>
                 <option value="aquidaba">AQUIDABA</option>
@@ -5805,7 +5811,7 @@ impostometroMunicipiosEstados = [
         "Estado":"TO",
         "Municipios":
         """
-            <select style="width: 70%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control">
+            <select style="width: 35%;" name="selectMunicipio" data-id="ddlMunicipio" class="form-control mb-4">
                 <option value="0">Todos</option>
                 <option value="abreulandia">ABREULANDIA</option>
                 <option value="aguiarnopolis">AGUIARNOPOLIS</option>

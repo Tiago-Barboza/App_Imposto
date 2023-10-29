@@ -42,7 +42,6 @@ def maioresImpostos(request):
 
 def impostometro(request):
     global token
-    print(request.POST)
     if request.POST:
         if request.POST.get('csrfmiddlewaretoken') != token:
             if 'btnPesquisar' in request.POST:

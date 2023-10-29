@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+
+.bgColor{
+    /* background-image: linear-gradient(to bottom, blue, green); */
+    /* background-image: linear-gradient(22.5deg, rgb(140, 15, 105) 0%, rgb(140, 15, 105) 1%, rgb(133, 14, 103) 1%, rgb(133, 14, 103) 23%, rgb(125, 12, 102) 23%, rgb(125, 12, 102) 39%, rgb(118, 11, 100) 39%, rgb(118, 11, 100) 45%, rgb(110, 9, 98) 45%, rgb(110, 9, 98) 47%, rgb(103, 8, 96) 47%, rgb(103, 8, 96) 52%, rgb(95, 6, 95) 52%, rgb(95, 6, 95) 70%, rgb(88, 5, 93) 70%, rgb(88, 5, 93) 100%), linear-gradient(67.5deg, rgb(140, 15, 105) 0%, rgb(140, 15, 105) 1%, rgb(133, 14, 103) 1%, rgb(133, 14, 103) 23%, rgb(125, 12, 102) 23%, rgb(125, 12, 102) 39%, rgb(118, 11, 100) 39%, rgb(118, 11, 100) 45%, rgb(110, 9, 98) 45%, rgb(110, 9, 98) 47%, rgb(103, 8, 96) 47%, rgb(103, 8, 96) 52%, rgb(95, 6, 95) 52%, rgb(95, 6, 95) 70%, rgb(88, 5, 93) 70%, rgb(88, 5, 93) 100%), linear-gradient(157.5deg, rgb(140, 15, 105) 0%, rgb(140, 15, 105) 1%, rgb(133, 14, 103) 1%, rgb(133, 14, 103) 23%, rgb(125, 12, 102) 23%, rgb(125, 12, 102) 39%, rgb(118, 11, 100) 39%, rgb(118, 11, 100) 45%, rgb(110, 9, 98) 45%, rgb(110, 9, 98) 47%, rgb(103, 8, 96) 47%, rgb(103, 8, 96) 52%, rgb(95, 6, 95) 52%, rgb(95, 6, 95) 70%, rgb(88, 5, 93) 70%, rgb(88, 5, 93) 100%), linear-gradient(90deg, rgb(184, 43, 117), rgb(202, 2, 218));
+    background-blend-mode: overlay, overlay, overlay, normal; */
+
+    /* background-image: linear-gradient(67.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(22.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(112.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%, rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%, rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%, rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%, rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%, rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%, rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%), linear-gradient(90deg, rgb(231, 231, 231), rgb(195, 195, 195));
+    background-blend-mode: overlay, overlay, overlay, normal; */
+
+    /* background-image: linear-gradient(216deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(44deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(241deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(249deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(92deg, hsl(214,0%,11%),hsl(214,0%,11%)); */
+
+    /* background-image: linear-gradient(180deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%, rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%, rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%), linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%, rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%, rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%), linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%, rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%, rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%), linear-gradient(135deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%, rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%, rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%), linear-gradient(180deg, rgb(95, 3, 74), rgb(35, 65, 96));
+        background-blend-mode: overlay, overlay, overlay, overlay, normal; */
+
+    /* background-image: linear-gradient(0deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(22.5deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(90deg, rgb(93, 93, 93), rgb(177, 177, 177));
+    background-blend-mode: overlay, overlay, overlay, normal;*/
+    
+    /* background-image: linear-gradient(112.5deg, rgb(64, 64, 64) 0%, rgb(64, 64, 64) 63%, rgb(78, 78, 78) 63%, rgb(78, 78, 78) 78%, rgb(92, 92, 92) 78%, rgb(92, 92, 92) 80%, rgb(106, 106, 106) 80%, rgb(106, 106, 106) 83%, rgb(119, 119, 119) 83%, rgb(119, 119, 119) 86%, rgb(133, 133, 133) 86%, rgb(133, 133, 133) 96%, rgb(147, 147, 147) 96%, rgb(147, 147, 147) 100%), linear-gradient(90deg, rgb(64, 64, 64) 0%, rgb(64, 64, 64) 63%, rgb(78, 78, 78) 63%, rgb(78, 78, 78) 78%, rgb(92, 92, 92) 78%, rgb(92, 92, 92) 80%, rgb(106, 106, 106) 80%, rgb(106, 106, 106) 83%, rgb(119, 119, 119) 83%, rgb(119, 119, 119) 86%, rgb(133, 133, 133) 86%, rgb(133, 133, 133) 96%, rgb(147, 147, 147) 96%, rgb(147, 147, 147) 100%), linear-gradient(157.5deg, rgb(64, 64, 64) 0%, rgb(64, 64, 64) 63%, rgb(78, 78, 78) 63%, rgb(78, 78, 78) 78%, rgb(92, 92, 92) 78%, rgb(92, 92, 92) 80%, rgb(106, 106, 106) 80%, rgb(106, 106, 106) 83%, rgb(119, 119, 119) 83%, rgb(119, 119, 119) 86%, rgb(133, 133, 133) 86%, rgb(133, 133, 133) 96%, rgb(147, 147, 147) 96%, rgb(147, 147, 147) 100%), linear-gradient(90deg, rgb(202, 202, 202), rgb(187, 187, 187));
+    background-blend-mode: overlay, overlay, overlay, normal; */
+
+    /* background-image: linear-gradient(0deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(22.5deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%, rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%, rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%, rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%, rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%, rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%, rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%), linear-gradient(90deg, rgb(93, 93, 93), rgb(177, 177, 177));
+    background-blend-mode: overlay, overlay, overlay, normal; */
+
+    background-image: linear-gradient(22.5deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(315deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(112.5deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(270deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(360deg, rgb(96, 96, 96), rgb(8, 8, 8));
+    background-blend-mode: overlay, overlay, overlay, overlay, normal;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    font-family: 'Source Code Pro', monospace, "Arial";
+    font-weight: bold;
+} 
+
+.dropdown-menu{
+    font-size: 0.8em;
+    padding: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: white;
+    border: none;
+}
+
+#resultTributo{
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace, "Arial";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+    color: white;
+}
+
+img{
+    display: none;
+}
+#imgBanner{
+    display: none;
+}
+
+/* Navbar Styles */
+.navbar-collapse{
+   justify-content: center;
+}
+
+.navbar{
+    padding: 0px 5px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+#headerNav{
+    position: absolute;
+    font-family: 'Inria Serif', serif;
+    font-family: 'Source Code Pro', monospace;
+    vertical-align: middle;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+@media (max-width: 768px) {
+    #headerNav{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 0px;
+    }
+    .navbar{
+        padding: 0px;
+    }
+}
+
+
+
+
+.animation{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(-6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(1.2deg);
+    }
+}
+
+
+
+
+
+/* Maiores Impostos */
+.table thead tr{
+    background-image: linear-gradient(to right, black, gray);
+}
+.table thead tr{
+    color:white;
+}
+.table{
+    background-image: linear-gradient(to right, black, gray);
+}

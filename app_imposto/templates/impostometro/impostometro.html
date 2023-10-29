@@ -4,27 +4,22 @@
     {% load static%}
     <meta charset="UTF-8">
     <title>Impostômetro</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     {% bootstrap_messages %}
-    <style>
-        #imgBanner{
-            display: none;
-        }
-    </style>
 </head>
-<body style="background-image: radial-gradient(circle 835px at 12.1% 24%, rgba(93, 133, 178, 1) 25.7%, rgba(50, 73, 101, 1) 100.2%); background-repeat: no-repeat; background-attachment: fixed;">
+<body class="bgColor">
     {% include 'shared/header.html' %}
     {% block content %}
     <main>
-        <h1 class="text-center">Descubra o valor arrecadado</h1>
-        <div id="divEstados" class="text-center">
-            <form class=" d-flex flex-column align-items-center" style="width: 100%" id="formEstado" method="post" action="{% url 'impostometro' %}">
+        <h1 class="text-center mt-5">Descubra o valor arrecadado</h1>
+        <div id="divEstados" class="text-center slide-bck-center">
+            <form class="d-flex flex-column align-items-center" style="width: 100%" id="formEstado" method="post" action="{% url 'impostometro' %}">
                 {% csrf_token %}
-                <select style="width: 70%; margin-bottom: 2%" class="form-control" name="selectEstado" onchange="this.form.submit();">
+                <select style="width: 35%;" class="form-control mb-4" name="selectEstado" onchange="this.form.submit();">
                     <option value="">Escolha um estado</option>
                     {% if select_value == "BR" %}
                         <option value="BR" selected>Brasil</option>
@@ -170,10 +165,10 @@
                 {% csrf_token %}
                 {{selectMunicipios}}
                 {% csrf_token %}
-                <button class="btn btn-info mt-2" id="btnDale" name="btnPesquisar" type="submit" onclick="OcultaImagem">Pesquisar</button>
+                <button class="btn btn-info slide-bck-center" id="btnDale" name="btnPesquisar" type="submit">Pesquisar</button>
             </form>
         </div>
-        <div class="text-center img-fluid" id="frameArrecadado">
+        <div class="text-center mt-4" id="frameArrecadado">
             {{frameArrecadado}}
         </div>
     </main>

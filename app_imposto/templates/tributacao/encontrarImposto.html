@@ -1,9 +1,9 @@
-<html lang="en">
+<html lang="pt-br">
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <title>Encontrar Impostos</title>
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
@@ -11,7 +11,7 @@
     {% bootstrap_messages %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body style="background-image: radial-gradient(circle 835px at 12.1% 24%, rgba(93, 133, 178, 1) 25.7%, rgba(50, 73, 101, 1) 100.2%); background-repeat: no-repeat; background-attachment: fixed;">
+<body class="bgColor">
     {% include 'shared/header.html' %}
     {% block content %}
     <main>
@@ -33,13 +33,7 @@
                 </div>
             </form>
             <div class="col-12 mt-3 text-center">
-                <span style="font-size: 1em;
-                          text-transform: uppercase;
-                          font-family: 'Gambetta', serif;
-                          letter-spacing: 1px;
-                          margin-bottom: 0.8rem;
-                          outline: none;
-                          text-align: center;">
+                <span id="resultTributo">
                     {{result}}
                 </span>
             </div>
