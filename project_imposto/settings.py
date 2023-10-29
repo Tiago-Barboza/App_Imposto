@@ -118,25 +118,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, "static")
 ]
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-#     "/app_imposto/static/",
-# ]
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ALLOWED_HOSTS = [".vercel.app","*"]
-ALLOWED_HOSTS = ["192.168.1.13","*","127.0.0.1",".vercel.app"]
+ALLOWED_HOSTS = [".vercel.app",".now.sh"]
 
 
 #Variáveis Globais
