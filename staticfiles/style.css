@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+
+.bgColor{
+    background-image: linear-gradient(22.5deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(315deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(112.5deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(270deg, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 3%, rgb(132, 132, 132) 3%, rgb(132, 132, 132) 16%, rgb(117, 117, 117) 16%, rgb(117, 117, 117) 26%, rgb(101, 101, 101) 26%, rgb(101, 101, 101) 29%, rgb(85, 85, 85) 29%, rgb(85, 85, 85) 65%, rgb(70, 70, 70) 65%, rgb(70, 70, 70) 89%, rgb(54, 54, 54) 89%, rgb(54, 54, 54) 100%), linear-gradient(360deg, rgb(96, 96, 96), rgb(8, 8, 8));
+    background-blend-mode: overlay, overlay, overlay, overlay, normal;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    font-family: 'Source Code Pro', monospace, "Arial";
+    font-weight: bold;
+} 
+
+.dropdown-menu{
+    font-size: 0.8em;
+    padding: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: white;
+    border: none;
+}
+
+#resultTributo{
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace, "Arial";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+    color: white;
+}
+
+img{
+    display: none;
+}
+#imgBanner{
+    display: none;
+}
+
+/* Navbar Styles */
+.navbar-collapse{
+   justify-content: center;
+}
+
+.navbar{
+    padding: 0px 5px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+#headerNav{
+    position: absolute;
+    font-family: 'Inria Serif', serif;
+    font-family: 'Source Code Pro', monospace;
+    vertical-align: middle;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+@media (max-width: 768px) {
+    #headerNav{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 0px;
+    }
+    .navbar{
+        padding: 0px;
+    }
+}
+
+
+
+
+.animation{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(-6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(-2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(1.2deg);
+    }
+}
+
+
+
+
+
+/* Maiores Impostos */
+.table thead tr{
+    background-image: linear-gradient(to right, black, gray);
+}
+.table thead tr{
+    color:white;
+}
+.table{
+    background-image: linear-gradient(to right, black, gray);
+}
